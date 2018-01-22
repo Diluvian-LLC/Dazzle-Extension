@@ -1,0 +1,48 @@
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<style>
+body {
+width: 300
+}
+</style>
+<body style="width:300px">
+  <form accept-charset="utf-8" id="form" >
+    <span>Dazzle Disguise Selection</span><br><br>
+    <label for="profile">Disguise</label>
+    <select name="profile" id="profile">
+      <option>Fashion Girl</option>
+      <option>2nd Amendment Enthusiast</option>
+      <option>Botanist</option>
+      <option>Health Fanatic</option>
+      <option>Software Engineer</option>
+    </select>
+    <br><br>
+    <span id="description" style"="font-size:90%">Select a disguise from above and hit the blue button below.</span>
+    <br><br>
+    <table><tr><td><img src="diluvian.png" width=100px id="main1"></td><td width=200px align="center">
+    <input type="button" value="Use Disguise" id="submit" class="button" style="width:160px"><br>
+    <input type="button" value="More Information" id="more_info1" class="button" style="width:160px;background-color:#FFF78E"></td></tr></table>
+  </form>
+  <div id="content" style="display:none;">
+    <table><tr><td width="150px" align=center>
+    <label for="disguise">Disguise:</label><br>
+    <span type="text" name="disguise" id="worn_disguise"></span></td><td width=150px align=center>
+    <input type="button" value="Change Disguise" id="logout" class="button" style="width: 130px;"></td></tr></table><br>
+    <label for="cookies">&nbsp&nbspDecoy Cookies Added: </label><span type="text" name="cookies" id="cookies" style="color:#2CABC7">0</span>
+    <br>
+    <label for="syncSettings">&nbsp&nbspFrequency of Data Updates</label>
+    <br><div id="slidecontainer">
+    <input type="range" min="1" max="10" value="1" class="slider" id="syncSettings" style="width:260px"><span id="syncNum"></span></div>
+    <table><tr><td width="50px" align=center>
+    <label class="switch">
+    <input id="UA_Toggle" type="checkbox">
+    <span class="checker round"></span>
+    </label></td><td><span>Randomize User-Agent:</span><span id="spoof_bool"></span></td></tr></table>
+    <p>For the user manual, please click "More Information" to visit our tracker-free website</p>
+    <table><tr><td><img src="diluvian.png" width=100px id="main2"></td><td width=200px align="center">
+    <input type="button" value="More Information" id="more_info2" class="button" style="width:160px;background-color:#FFF78E"></td></tr></table>
+  </div>
+  <script type="text/javascript" src="./popup.js"></script>
+</body>
